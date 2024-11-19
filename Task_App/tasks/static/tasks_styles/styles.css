@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Giga:wght@100..900&family=Rubik:wght@500&display=swap');
+
+h1 {
+    font-family: Lexend Giga, sans-serif;
+}
+
+.field {
+
+    position: relative;
+    left: 22px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    font-family: Lexend Giga, sans-serif;
+    background-color: rgba(217, 217, 217, 1); 
+    transition: border 0.5s ease;
+    color: #000000; 
+    font-weight: 400;
+  
+}
+
+.submit {
+    position: relative;
+    left: 42px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 0px;
+    font-size: 16px;
+    font-family: Lexend Giga, sans-serif;
+    background-color: rgba(217, 217, 217, 1); 
+    transition: border 0.3s ease;
+    color: black; 
+    font-weight: 400;
+  
+}
+
+.field::placeholder {
+    color: black;
+}
+
+.submit:hover {
+    cursor: pointer;
+    border: 1px solid
+}
+
+.field:hover{
+    cursor: pointer;
+    border: 1px solid
+}

@@ -1,19 +1,18 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lexend+Giga:wght@100..900&family=Rubik:wght@500&display=swap" rel="stylesheet">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task Manager</title>
+    <link rel="stylesheet" href="{% static 'tasks_styles\styles.css' %}">
 </head>
 <body>
     <h1>TASKS</h1>
-    <style>
-        h1 {
-            font-family: "Lexend Giga", sans-serif;
-        }
-    </style>
+    <form>
+        <input type="text", name="task", placeholder="NEW TASK" class="field">
+        <input type="submit" class="submit", value="SUBMIT">
+    </form>
 </body>
 </html>
