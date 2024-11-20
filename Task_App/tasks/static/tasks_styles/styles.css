@@ -48,3 +48,9 @@ h1 {
     cursor: pointer;
     border: 1px solid
 }
+
+.task_div {
+    background-color: rgba(217, 217, 217, 1);
+    position: relative;
+    
+}
