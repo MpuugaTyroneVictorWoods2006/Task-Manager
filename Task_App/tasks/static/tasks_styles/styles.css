@@ -51,6 +51,12 @@ h1 {
 
 .task_div {
     background-color: rgba(217, 217, 217, 1);
-    position: relative;
-    
+    margin-bottom: 20px;
+    width: 240px;
+    height: 30px;
+    border-radius: 3px;
+    font-family: Lexend Giga, sans serif;
+    line-height: 30px;
+    padding-left: 7px;
+    font-weight: 400;
 }
