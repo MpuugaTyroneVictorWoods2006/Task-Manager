@@ -6,6 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task Manager</title>
+    <link rel="icon" href="{% static 'images/favicon.svg' %}" type="image/svg+xml">
     <link rel="stylesheet" href="{% static 'tasks_styles/styles.css' %}">
 </head>
 <body>
@@ -17,9 +18,9 @@
     <ul>
         {% for task in tasks %}
             <div class="task_div">{{task}} 
-                <button>D</button>
-                <button>D</button>
-                <button>D</button>
+                <button class="icon_button">
+                    <img src="{% static 'images/trash.png' %}" alt="Button Image" class="icon"/>
+                </button>
             </div>
         {%endfor%}
     </ul>

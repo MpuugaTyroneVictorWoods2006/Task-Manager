@@ -60,3 +60,19 @@ h1 {
     padding-left: 7px;
     font-weight: 400;
 }
+
+.icon {
+    margin-right: 8px;  /* Space between image and text */
+    width: 20px;  /* Adjust the image size */
+    height: 20px;  /* Adjust the image size */
+    
+}
+
+.icon_button {
+    display: inline-flex;
+    align-items: center;  /* Vertically center the content */
+    justify-content: center;
+    background-color: rgba(217, 217, 217, 1); /* Button background color */
+    border: 1px solid;
+    cursor: pointer;
+}
