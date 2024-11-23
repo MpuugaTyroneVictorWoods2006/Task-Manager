@@ -6,13 +6,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task Manager</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-XCRjXfZI8D9g+nAtJLmPa0FNvJZQDlggMe1oUj2U/T18UCWkXveAvC2FghL1AoNi" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+     rel="stylesheet" integrity="sha384-XCRjXfZI8D9g+nAtJLmPa0FNvJZQDlggMe1oUj2U/T18UCWkXveAvC2FghL1AoNi" crossorigin="anonymous">
     <link rel="icon" href="{% static 'images/favicon.svg' %}" type="image/svg+xml">
     <link rel="stylesheet" href="{% static 'tasks_styles/styles.css' %}">
 </head>
 <body>
     <h1>TASKS</h1>
-    <form>
+    <form method="post">
+        {% csrf_token %}
         <input type="text", name="task", placeholder="NEW TASK" class="field">
         <input type="submit" class="submit", value="SUBMIT">
     </form>
