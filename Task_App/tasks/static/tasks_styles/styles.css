@@ -49,31 +49,66 @@ h1 {
     border: 1px solid
 }
 
-.task_div {
-    background-color: rgba(217, 217, 217, 1);
-    margin-bottom: 20px;
-    width: 240px;
-    height: 30px;
-    border-radius: 3px;
+.task-container {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.task-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #e0e0e0;
+    padding: 10px 20px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px; /* Adjust this value for spacing */
+
+}
+/* Remove the margin for the last task to prevent extra space */
+.task-bar:last-child {
+    margin-bottom: 0;
+}
+
+
+.task-text {
     font-family: Lexend Giga, sans serif;
-    line-height: 30px;
-    padding-left: 7px;
-    font-weight: 400;
+    font-weight: bold;
+    font-size: 16px;
+    color: black;
+}
+
+.task-icons {
+    display: flex;
+    gap: 10px;
 }
 
 .icon {
-    margin-right: 8px;  /* Space between image and text */
-    width: 20px;  /* Adjust the image size */
-    height: 20px;  /* Adjust the image size */
-    
+    width: 24px;
+    height: 24px;
+    background-color: #c4c4c4;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
 }
 
-.icon_button {
-    display: inline-flex;
-    align-items: center;  /* Vertically center the content */
-    justify-content: center;
-    background-color: rgba(217, 217, 217, 1); /* Button background color */
-    border: 1px solid;
-    cursor: pointer;
-    margin: 20px 0 0 50px;
+.icon.delete {
+    background-image: url('Task-App/tasks/static/images/trash.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.icon.complete {
+    background-image: url('Task-App/tasks/static/images/undone.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.icon.details {
+    background-image: url('Task-App/tasks/static/images/description.png');
+    background-repeat: no-repeat;
+    background-position: center;
 }

@@ -20,11 +20,14 @@
     </form>
     <ul>
         {% for task in tasks %}
-            <div class="task_div">{{task}} 
-                <button class="icon_button">
-                    <img src="{% static 'images/trash.png' %}" alt="Button Image" class="icon"/>
-                </button>
+        <div class="task-bar">
+            <span class="task-text">{{ task }}</span>
+            <div class="task-icons">
+                <div class="icon delete" title="Delete"></div>
+                <div class="icon complete" title="Complete"></div>
+                <div class="icon details" title="Details"></div>
             </div>
+        </div>
         {%endfor%}
     </ul>
 </body>
