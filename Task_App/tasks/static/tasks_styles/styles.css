@@ -112,3 +112,14 @@ h1 {
     background-repeat: no-repeat;
     background-position: center;
 }
+
+.buttons {
+    width: 24px;
+    height: 24px;
+    background-color: #c4c4c4;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
